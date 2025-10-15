@@ -57,5 +57,5 @@ The final payload that we need the XOR with the file is as follows
 ```
 ## Final Answer
 
-![9](https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/6.png?raw=true)
+![9](https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/9.png?raw=true)
 

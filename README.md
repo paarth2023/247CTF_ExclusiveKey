@@ -40,11 +40,11 @@ And searching for some familiar strings we come across
 
 ![4](https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/4.png?raw=true)
 
-![[https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/5.png?raw=true]]
-
-![5](https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/6.png?raw=true)
+![5](https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/5.png?raw=true)
 
 ![6](https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/6.png?raw=true)
+
+![7](https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/7.png?raw=true)
 
 It is clear that `wiki` is repeated over and over for the entire file and it could be speculated that the file is an HTML document belonging to a random Wikipedia web page.
 

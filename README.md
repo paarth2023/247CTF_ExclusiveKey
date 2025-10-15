@@ -12,7 +12,7 @@ Since we already know that the format of the flag is `247CTF{32-hex}` we first X
 
 Once we have done the XOR operation we get the following output
 
-![[https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/1.png?raw=true]]
+![1](https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/1.png?raw=true)
 
 We can see that `<!DOCTY` which clearly shows that the file is an HTML document and will definitely contain `<!DOCTYP html>` 
 
@@ -20,7 +20,7 @@ We can see that `<!DOCTY` which clearly shows that the file is an HTML document 
 
 On performing XOR between `<!DOCTYPE html>` and the `exclusive_key` you get the following output:
 
-![[https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/2.png?raw=true]]
+![2](https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/2.png?raw=true])
 
 A little bit of the flag is seen in the rightmost column thus telling us that `<!DOTYPE html> ....` is the right payload to XOR with the file.
 
@@ -36,15 +36,15 @@ strings xor_results | less
 
 And searching for some familiar strings we come across
 
-![[https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/3.png?raw=true]]
+![3](https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/3.png?raw=true)
 
-![[https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/4.png?raw=true]]
+![4](https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/4.png?raw=true)
 
 ![[https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/5.png?raw=true]]
 
-![[https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/6.png?raw=true]]
+![5](https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/6.png?raw=true)
 
-![[https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/7.png?raw=true]]
+![6](https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/6.png?raw=true)
 
 It is clear that `wiki` is repeated over and over for the entire file and it could be speculated that the file is an HTML document belonging to a random Wikipedia web page.
 
@@ -57,5 +57,5 @@ The final payload that we need the XOR with the file is as follows
 ```
 ## Final Answer
 
-![[https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/9.png?raw=true]]
+![9](https://github.com/paarth2023/247CTF_ExclusiveKey/blob/main/6.png?raw=true)
 

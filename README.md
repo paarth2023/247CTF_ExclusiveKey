@@ -12,7 +12,7 @@ Since we already know that the format of the flag is `247CTF{32-hex}` we first X
 
 Once we have done the XOR operation we get the following output
 
-![[Pasted image 20251015153415.png]]
+![[1.png]]
 
 We can see that `<!DOCTY` which clearly shows that the file is an HTML document and will definitely contain `<!DOCTYP html>` 
 
@@ -20,7 +20,7 @@ We can see that `<!DOCTY` which clearly shows that the file is an HTML document 
 
 On performing XOR between `<!DOCTYPE html>` and the `exclusive_key` you get the following output:
 
-![[Pasted image 20251015161240.png]]
+![[2.png]]
 
 A little bit of the flag is seen in the rightmost column thus telling us that `<!DOTYPE html> ....` is the right payload to XOR with the file.
 
@@ -36,11 +36,15 @@ strings xor_results | less
 
 And searching for some familiar strings we come across
 
-![[Pasted image 20251015160000.png]]
+![[3.png]]
 
-![[Pasted image 20251015160037.png]]
+![[4.png]]
 
-![[Pasted image 20251015160110.png]]
+![[5.png]]
+
+![[6.png]]
+
+![[7.png]]
 
 It is clear that `wiki` is repeated over and over for the entire file and it could be speculated that the file is an HTML document belonging to a random Wikipedia web page.
 
@@ -53,5 +57,5 @@ The final payload that we need the XOR with the file is as follows
 ```
 ## Final Answer
 
-![[2025-10-15-161727_hyprshot.png]]
+![[9.png]]
 
